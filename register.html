@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost & Found Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lost & Found Platform</h1>
+        
+        <!-- Lost Item Form -->
+        <div class="form-section">
+            <h2>Report a Lost Item</h2>
+            <input type="text" id="itemName" placeholder="Item Name" required>
+            <input type="text" id="itemDescription" placeholder="Description" required>
+            <input type="text" id="contactInfo" placeholder="Your Contact" required>
+            <button onclick="reportLostItem()">Report Item</button>
+        </div>
+
+        <!-- Search Box -->
+        <div class="search-section">
+            <input type="text" id="searchBox" placeholder="Search lost items..." onkeyup="searchItems()">
+        </div>
+
+        <!-- Lost Items Section -->
+        <div class="items-section">
+            <h2>Lost Items</h2>
+            <ul id="lostItemsList"></ul>
+        </div>
+
+        <!-- Found Items Section -->
+        <div class="items-section">
+            <h2>Found Items</h2>
+            <ul id="foundItemsList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
